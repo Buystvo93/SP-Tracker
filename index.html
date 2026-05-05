@@ -7,15 +7,21 @@
 </head>
 <body>
 
-  <h1>Roblox Tracker</h1>
+  <div class="container">
+    <h1>Sailor Piece Tracker</h1>
 
-  <select id="profileSelect"></select>
+    <input type="text" id="search" placeholder="Search player...">
 
-  <div id="profile">
-    <h2 id="username"></h2>
-    <p>Level: <span id="level"></span></p>
+    <div id="results"></div>
 
-    <div id="stats"></div>
+    <div id="profile" class="card hidden">
+      <h2 id="username"></h2>
+      <p class="level">Level <span id="level"></span></p>
+
+      <div id="totalProgress"></div>
+
+      <div id="stats"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>
