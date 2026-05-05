@@ -1,28 +1,87 @@
 body {
-  font-family: Arial;
-  background: #121212;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
   text-align: center;
 }
 
-#profile {
+h1 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+#results {
+  text-align: left;
+}
+
+.result {
+  background: #1e293b;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.result:hover {
+  background: #334155;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 15px;
+  padding: 20px;
   margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.hidden {
+  display: none;
+}
+
+.level {
+  opacity: 0.8;
+  margin-bottom: 15px;
 }
 
 .stat {
-  margin: 10px auto;
-  width: 300px;
+  margin: 10px 0;
   text-align: left;
 }
 
 .bar {
-  height: 20px;
-  background: #333;
+  height: 18px;
+  background: #0f172a;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .fill {
   height: 100%;
-  background: #4caf50;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+  transition: width 0.5s ease;
+}
+
+.totalBar {
+  margin-bottom: 20px;
+}
+
+.totalFill {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
 }
